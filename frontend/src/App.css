@@ -12,6 +12,14 @@ button{
   cursor: pointer;
 }
 
+#calendar{
+  background: white;
+  width: 90%;
+  margin: 20px;
+  color:black;
+  padding: 30px;
+}
+
 h1{
   margin: 0;
 }

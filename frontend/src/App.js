@@ -1,12 +1,31 @@
 import './App.css';
 import detectEthereumProvider from '@metamask/detect-provider';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Calendar  from './components/Calendar';
 
 
 
 function App() {
+
   const[account, setAccount] = useState(false);
+
+  //Tells React that your component needs to do something after render
+  useEffect(() => {
+    isConnected();
+  }, []);
+
+  const isConnected = async () => {
+    const provider = await detectEthereumProvider();
+    const accounts = await provider.request({method: "eth_accounts"});
+
+    if (accounts.length>0){
+      setAccount(accounts[0]);
+    }else {
+      console.log("No authorized account found");
+    }
+  }
+
+  //Will Load MetaMask
   const connect = async () => {
     try {
       const provider = await detectEthereumProvider();
