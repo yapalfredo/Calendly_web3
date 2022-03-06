@@ -20,13 +20,13 @@ describe("Set rate", function () {
     // get addresses
     const [owner, addr1, addr2] = await ethers.getSigners();
 
-    console.log(owner);
-    console.log(addr1);
+    // console.log(owner.address);
+    // console.log(addr1.address);
 
     //call setRate using a different account address
     //this should fail since this address is not the owner
     await expect(
-      contract.connect(owner).setRate(500)
+      contract.connect(addr1).setRate(500)
     ).to.be.revertedWith('Only the owner can set the rate')
   });
 });
