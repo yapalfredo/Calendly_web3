@@ -24,7 +24,7 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     goerli: {
-      url: "https://eth-mainnet.alchemyapi.io/v2/yYsw12eHQQtJc4xeV5WCVBX8HCgPJ5bE",
+      url: "https://eth-goerli.alchemyapi.io/v2/Tgq4DliyULTudLmI_0TX_xHQXZgNmlnj",
       accounts: ["cb1bc99862fc163cbbb826bec37d8b738c0f3929ac10566b8990c0da708eb9d2"]
     }
   }
