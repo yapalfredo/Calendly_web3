@@ -44,7 +44,7 @@ contract Calend3 {
 
         require(msg.value >= appointment.amountPaid, "We require more Ether");
 
-        (bool success, ) = owner.call{value: msg.value }("");
+        (bool success, ) = owner.call{value: msg.value }(""); // Send ETH to the owner
         require(success, "Failed to send Ether");
 
         appointments.push(appointment);

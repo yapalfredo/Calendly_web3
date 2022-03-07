@@ -35,16 +35,25 @@ describe("Calend3 Testing", function () {
   });
 
   it("shoud add two appointments", async function(){
-    const tx = await contract.createAppointment("Meeting with Part Time Larry", 1644143500, 1644151000);
-    await tx.wait();
+    const tx1 = await contract.setRate(ethers.utils.parseEther("0.001"));
+    await tx1.wait();
 
-    const tx2 = await contract.createAppointment("Breakfast with Elon Mush", 1644154700, 1644160100);
+    const tx2 = await contract.connect(addr1).createAppointments("Meeting with Part Time Larry", 1644143500, 1644151000, {value: ethers.utils.parseEther("2")});
     await tx2.wait();
+
+    const tx3 = await contract.connect(addr2).createAppointments("Breakfast with Elon Mush", 1644154700, 1644160100, {value: ethers.utils.parseEther("1.5")});
+    await tx3.wait();
 
     const appointments = await contract.getAppointments();
     
     expect(appointments.length).to.equal(2);
 
-  });
+    const ownerBalance = await ethers.provider.getBalance(owner.address);
+    const addr1Balance = await ethers.provider.getBalance(addr1.address);
+    const addr2Balance = await ethers.provider.getBalance(addr2.address);
 
+    console.log(ownerBalance);
+    console.log(addr1Balance);
+    console.log(addr2Balance);
+  });
 });
