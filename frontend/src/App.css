@@ -12,6 +12,20 @@ button{
   cursor: pointer;
 }
 
+#settings-button{
+  background: #282c34;
+  color: white;
+
+}
+
+#admin{
+  background: white;
+  padding:20px;
+  margin:20px auto;
+  width: 1000px;
+  color: black;
+}
+
 #calendar{
   background: white;
   width: 90%;
