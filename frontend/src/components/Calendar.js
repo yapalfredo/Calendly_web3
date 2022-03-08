@@ -1,3 +1,7 @@
+import { useState, useEffect } from 'react';
+import { ethers } from "ethers";
+import abi from "../abis/Calend3.json";
+
 import { ViewState, EditingState, IntegratedEditing } from '@devexpress/dx-react-scheduler';
 import { Scheduler, WeekView, Appointments, AppointmentForm } from '@devexpress/dx-react-scheduler-material-ui';
 
@@ -10,6 +14,11 @@ const saveAppointment = (data) => {
     console.log('commiting changes');
     console.log(data);
 }
+
+const contractAddress = "0xdd17Bf4Da57EB0B102A7dAAc1c14395fA9b39413";
+const contractABI = abi.abi;
+const provider = new ethers.providers.Web3Provider(window.ethereum);
+const contract = new ethers.Contract(contractAddress, contractABI, provider.getSigner());  
 
 const Calendar = () => {
     return (<div id="calendar">
