@@ -52,7 +52,7 @@ function App() {
         <div id="slogan">Web3 Appointment Scheduling App</div>
 
         {!account && <button onClick={connect}>Connect Wallet</button>}
-        {account && <Calendar />}
+        {account && <Calendar account={account} />}
       </header>
     </div>
   );
