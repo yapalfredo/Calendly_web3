@@ -259,8 +259,7 @@ const Calendar = (props) => {
         </Scheduler>
       </div>
 
-        {showDialog && <ConfirmDialog />}
-
+      {showDialog && <ConfirmDialog />}
     </div>
   );
 };
