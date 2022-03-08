@@ -18,7 +18,7 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 ### Create your hardhat.config.js file for this to work (sample below)
-
+```shell
 require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -50,3 +50,4 @@ module.exports = {
     }
   }
 }
+```
