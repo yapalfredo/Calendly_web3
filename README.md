@@ -8,7 +8,7 @@ Once an appointment is confirmed, you will receive a text notification.<br/>
 React, Express, Solidity
 
 ## The Text notification was achieved by the following:
-Alchemy Notify listening to the testnet contract address<br/>
+Alchemy Notify listening to the testnet contract address.<br/>
 NGROK exposing the express server webhook port publicly.<br/>
 Twilio API
 
@@ -79,5 +79,8 @@ Sign Appointment (Guest View)
 Waiting Appointment To Be Confirmed (Guest View)
 ![Alt text](/screenshots/4.JPG?raw=true "Guest - Confirming Appointment in Blockchain")  
 
+Appointment Confirmed (Guest View)
+![Alt text](/screenshots/5.JPG?raw=true "Guest - Coinfirmed Appointment")  
+
 Homepage (Admin View)
-![Alt text](/screenshots/5.JPG?raw=true "Admin - Homepage")  
+![Alt text](/screenshots/6.JPG?raw=true "Admin - Homepage")  
