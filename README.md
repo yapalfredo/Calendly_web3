@@ -1,7 +1,11 @@
 # This project is about the web3 version of Calendly
-Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial
+Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial.
+Calend3 Smart Contract was deployed in Goerli Testnet.
+You can use this app if you want people to setup an appointment with you and get paid for your time via ETH.
+Once an appointment is confirmed, you will receive a text notification.
 
-
+## The Text notification was achieved by the following:
+Alchemy Notify, NGROK, Twilio API
 
 
 # Stuff you should know if you plan to fork this:
@@ -47,7 +51,6 @@ module.exports = {
 ### For line 23 of Calendar.js
 make sure to initialize the value of contractAddress variable to your deployed contract address,
 and change it everytime you redeploy your contract
-
 
 ### setup dotenv and create the .env file
 ```shell
