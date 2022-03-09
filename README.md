@@ -45,8 +45,17 @@ make sure to initialize the value of contractAddress variable to your deployed c
 and change it everytime you redeploy your contract
 
 ## Screenshot
+Homepage (Guest View)
 ![Alt text](/screenshots/1.JPG?raw=true "Guest - Homepage")
+
+Create Appointment (Guest View)
 ![Alt text](/screenshots/2.JPG?raw=true "Guest - Create Appointment")  
+
+Sign Appointment (Guest View)
 ![Alt text](/screenshots/3.JPG?raw=true "Guest - Sign Appointment")  
+
+Waiting Appointment To Be Confirmed (Guest View)
 ![Alt text](/screenshots/4.JPG?raw=true "Guest - Confirming Appointment in Blockchain")  
+
+Homepage (Admin View)
 ![Alt text](/screenshots/5.JPG?raw=true "Admin - Homepage")  
