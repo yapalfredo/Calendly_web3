@@ -2,7 +2,11 @@
 Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial
 
 
-## Calend3 project uses Hardhat
+
+
+# Stuff you should know if you plan to fork this:
+
+### Hardhat
 Visit HarhHat's [website](https://hardhat.org/getting-started/) to know more
 
 ### Create your hardhat.config.js file for this to work. Modify url and accounts to your settings (sample below)
@@ -44,7 +48,17 @@ module.exports = {
 make sure to initialize the value of contractAddress variable to your deployed contract address,
 and change it everytime you redeploy your contract
 
-## Screenshot
+
+### setup dotenv and create the .env file
+```shell
+ACCOUNT_SID="TWILIO WILL PROVIDE THIS"
+AUTH_TOKEN="TWILIO WILL PROVIDE THIS TOO"
+FROM_PHONE="TWILIO WILL PROVIDE THIS AS WELL"
+TO_PHONE="PUT YOUR PHONE NUMBER
+```
+
+
+# Screenshot
 Homepage (Guest View)
 ![Alt text](/screenshots/1.JPG?raw=true "Guest - Homepage")
 
