@@ -3,20 +3,8 @@ Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/chan
 
 
 ## Calend3 project uses Hardhat
+Visit HarhHat's [website](https://hardhat.org/getting-started/) to know more
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
 ### Create your hardhat.config.js file for this to work. Modify url and accounts to your settings (sample below)
 ```shell
 require("@nomiclabs/hardhat-waffle");
@@ -57,3 +45,8 @@ make sure to initialize the value of contractAddress variable to your deployed c
 and change it everytime you redeploy your contract
 
 ## Screenshot
+![Alt text](/screenshots/1.JPG?raw=true "Guest - Homepage")
+![Alt text](/screenshots/2.JPG?raw=true "Guest - Create Appointment")  
+![Alt text](/screenshots/3.JPG?raw=true "Guest - Sign Appointment")  
+![Alt text](/screenshots/4.JPG?raw=true "Guest - Confirming Appointment in Blockchain")  
+![Alt text](/screenshots/5.JPG?raw=true "Admin - Homepage")  
