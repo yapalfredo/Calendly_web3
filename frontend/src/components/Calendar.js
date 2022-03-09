@@ -20,20 +20,7 @@ import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import Dialog from "@mui/material/Dialog";
 import CircularProgress from "@mui/material/CircularProgress";
 
-// const schedulerData = [
-//   {
-//     startDate: "2022-03-08T09:45",
-//     endDate: "2022-03-08T11:00",
-//     title: "Dogecoin Integration",
-//   },
-//   {
-//     startDate: "2022-03-09T12:00",
-//     endDate: "2022-03-09T13:30",
-//     title: "Podcast appearance",
-//   },
-// ];
-
-const contractAddress = "0x3cA4a6C947A27d67BdD495EECF214C006fd82fE3";
+const contractAddress = "0x3cA4a6C947A27d67BdD495EECF214C006fd82fE3";  //Change this to match your deployed contract
 const contractABI = abi.abi;
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 const contract = new ethers.Contract(

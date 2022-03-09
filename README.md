@@ -17,7 +17,7 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
-### Create your hardhat.config.js file for this to work (sample below)
+### Create your hardhat.config.js file for this to work. Modify url and accounts to your settings (sample below)
 ```shell
 require("@nomiclabs/hardhat-waffle");
 
@@ -45,9 +45,15 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     goerli: {
-      url: (API for connecting to test net),
-      accounts: (private key for a test wallet)
+      url: "API CONNECTING FOR GOERLI",
+      accounts: "PRIVATE KEY FOR TEST WALLET"
     }
   }
 }
 ```
+
+### For line 23 of Calendar.js
+make sure to initialize the value of contractAddress variable to your deployed contract address,
+and change it everytime you redeploy your contract
+
+## Screenshot
