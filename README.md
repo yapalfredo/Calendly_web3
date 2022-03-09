@@ -1,11 +1,16 @@
 # This project is about the web3 version of Calendly
-Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial.
-Calend3 Smart Contract was deployed in Goerli Testnet.
-You can use this app if you want people to setup an appointment with you and get paid for your time via ETH.
-Once an appointment is confirmed, you will receive a text notification.
+Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial.<br/>
+Calend3 Smart Contract was deployed in Goerli Testnet.<br/>
+You can use this app if you want people to setup an appointment with you and get paid for your time via ETH.<br/>
+Once an appointment is confirmed, you will receive a text notification.<br/>
+
+## Essentials
+React, Express, Solidity
 
 ## The Text notification was achieved by the following:
-Alchemy Notify, NGROK, Twilio API
+Alchemy Notify listening to the testnet contract address<br/>
+NGROK exposing the express server webhook port publicly.<br/>
+Twilio API
 
 
 # Stuff you should know if you plan to fork this:
