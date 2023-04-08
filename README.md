@@ -1,7 +1,7 @@
 # This project is about the web3 version of Calendly
-Credit goes to the dev YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial.<br/>
-Calend3 Smart Contract was deployed in Goerli Testnet.<br/>
-You can use this app if you want people to setup an appointment with you and get paid for your time via ETH.<br/>
+Credit goes to the YouTuber [(Part Time Larry)](https://www.youtube.com/channel/UCY2ifv8iH1Dsgjrz-h3lWLQ) for uploading a great tutorial.<br/>
+The Calend3 smart contract was deployed on the Goerli Testnet.<br/>
+You can use this app if you want people to set up an appointment with you and get paid for your time via ETH.<br/>
 Once an appointment is confirmed, you will receive a text notification.<br/>
 
 ## Essentials
@@ -51,18 +51,19 @@ module.exports = {
     }
   }
 }
+
 ```
 
 ### For line 23 of Calendar.js
 make sure to initialize the value of contractAddress variable to your deployed contract address,
-and change it everytime you redeploy your contract
+and change it every time you redeploy your contract
 
 ### setup dotenv and create the .env file
 ```shell
 ACCOUNT_SID="TWILIO WILL PROVIDE THIS"
 AUTH_TOKEN="TWILIO WILL PROVIDE THIS TOO"
 FROM_PHONE="TWILIO WILL PROVIDE THIS AS WELL"
-TO_PHONE="PUT YOUR PHONE NUMBER
+TO_PHONE="PUT YOUR PHONE NUMBER"
 ```
 
 
